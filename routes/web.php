@@ -8,3 +8,11 @@ Route::get('/', function () {
 });
 
 Route::get('/Barang', [BarangController::class, 'index'])->name('Barang');
+
+Route::get('/', function () {
+    return view('login');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
