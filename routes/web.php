@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('login');
 });
 
-Route::get('/Barang', [BarangController::class, 'index'])->name('Barang');
+Route::post('/Barang', [BarangController::class, ''])->name('Barang');
 
 Route::get('/', function () {
     return view('login');
@@ -15,4 +15,8 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
+});
+
+Route::post('/Barang', function() {
+    return view('Barang');
 });
